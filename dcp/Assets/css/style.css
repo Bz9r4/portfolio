@@ -1,10 +1,12 @@
 :root {
     --cta: #ff6e65;
-    --black1: #0e0e0e;
     --white1: #ffffff;
+    --black1: #0e0e0e;
     --black2: #121212;
+    --gray: #efefef;
 
     --border-cta: 50px;
+    
 }
 
 * {
@@ -14,6 +16,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+            /* sessão Header */
 
 header {
     position: fixed;
@@ -26,6 +30,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav > div {
@@ -44,4 +49,60 @@ nav > div {
     font-weight: 700;
     font-size: 18px;
     border-radius: var(--border-cta);
+}
+
+            /* Sessão Home  */
+#home {
+    display: flex;
+    align-items: center;
+    padding: 120px 200px 100px 200px;
+    background: linear-gradient(287.52deg, var(--black1) 76.11%, var(--white1) 76.11%);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.home-div-img {
+    border-radius: 150px 15px;
+    background: var(--black1);
+}
+
+.home-div-names {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-end;
+
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--white1);
+    text-align: end;
+}
+
+.names-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-p {
+    font-size: 34px;
+    line-height: 50px;
+}
+
+.prof {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.home-p > span {
+    font-size: 50px;
+    color: var(--cta);
+}
+
+.home-buttom {
+    background: var(--cta);
+    border-radius: var(--border-cta);
+    font-size: 24px;
+    padding: 15px 30px;
+    color: var(--black2);
 }
