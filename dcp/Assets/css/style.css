@@ -1,0 +1,47 @@
+:root {
+    --cta: #ff6e65;
+    --black1: #0e0e0e;
+    --white1: #ffffff;
+    --black2: #121212;
+
+    --border-cta: 50px;
+}
+
+* {
+    font-family: 'roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 30px 200px;
+    background: var(--black1);
+    color: var(--white1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-a {
+    font-size: 17px;
+}
+
+.nav-buttom {
+    background: var(--cta);
+    color: var(--black2);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: var(--border-cta);
+}
